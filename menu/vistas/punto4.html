@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones de conjuntos · Taller de PHP</title>
+    <link rel="stylesheet" href="../estilos.css">
+</head>
+<body>
+    <main class="pagina">
+        <header class="cabecera">
+            <a class="volver" href="../index.html">Menú</a>
+            <h1><span class="glifo">A∪B</span>Operaciones de conjuntos</h1>
+        </header>
+
+        <div class="panel">
+            <form class="tarjeta">
+                <input type="hidden" name="punto" value="4">
+                <div class="campo">
+                    <label for="conjuntoA">Conjunto A (comas o espacios)</label>
+                    <input type="text" id="conjuntoA" name="conjuntoA" placeholder="1, 2, 3, 4" required autofocus>
+                </div>
+                <div class="campo">
+                    <label for="conjuntoB">Conjunto B (comas o espacios)</label>
+                    <input type="text" id="conjuntoB" name="conjuntoB" placeholder="3, 4, 5, 6" required>
+                </div>
+                <button type="submit" class="boton">Calcular operaciones</button>
+            </form>
+
+            <section class="tarjeta resultado" aria-live="polite">
+                <p class="vacio">Escribe los conjuntos A y B, y pulsa «Calcular operaciones».</p>
+            </section>
+        </div>
+    </main>
+
+    <script src="../app.js"></script>
+</body>
+</html>

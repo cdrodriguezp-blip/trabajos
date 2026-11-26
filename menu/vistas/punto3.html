@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio, mediana y moda · Taller de PHP</title>
+    <link rel="stylesheet" href="../estilos.css">
+</head>
+<body>
+    <main class="pagina">
+        <header class="cabecera">
+            <a class="volver" href="../index.html">Menú</a>
+            <h1><span class="glifo">x̄</span>Promedio, mediana y moda</h1>
+        </header>
+
+        <div class="panel">
+            <form class="tarjeta">
+                <input type="hidden" name="punto" value="3">
+                <div class="campo">
+                    <label for="numeros">Números separados por comas o espacios</label>
+                    <input type="text" id="numeros" name="numeros" placeholder="10, 5, 8, 10, 3" required autofocus>
+                </div>
+                <button type="submit" class="boton">Calcular estadísticas</button>
+            </form>
+
+            <section class="tarjeta resultado" aria-live="polite">
+                <p class="vacio">Escribe varios números y pulsa «Calcular estadísticas».</p>
+            </section>
+        </div>
+    </main>
+
+    <script src="../app.js"></script>
+</body>
+</html>

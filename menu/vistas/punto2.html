@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucesión de Fibonacci o factorial · Taller de PHP</title>
+    <link rel="stylesheet" href="../estilos.css">
+</head>
+<body>
+    <main class="pagina">
+        <header class="cabecera">
+            <a class="volver" href="../index.html">Menú</a>
+            <h1><span class="glifo">n!</span>Sucesión de Fibonacci o factorial</h1>
+        </header>
+
+        <div class="panel">
+            <form class="tarjeta">
+                <input type="hidden" name="punto" value="2">
+                <div class="campo">
+                    <label for="numero">Número entero</label>
+                    <input type="number" id="numero" name="numero" placeholder="10" min="0" required autofocus>
+                </div>
+                <div class="campo">
+                    <label for="operacion">Operación</label>
+                    <select id="operacion" name="operacion">
+                        <option value="factorial">Factorial</option>
+                        <option value="fibonacci">Sucesión de Fibonacci</option>
+                    </select>
+                </div>
+                <button type="submit" class="boton">Calcular</button>
+            </form>
+
+            <section class="tarjeta resultado" aria-live="polite">
+                <p class="vacio">Elige un número y una operación, y pulsa «Calcular».</p>
+            </section>
+        </div>
+    </main>
+
+    <script src="../app.js"></script>
+</body>
+</html>

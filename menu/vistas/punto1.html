@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertir frase en acrónimo · Taller de PHP</title>
+    <link rel="stylesheet" href="../estilos.css">
+</head>
+<body>
+    <main class="pagina">
+        <header class="cabecera">
+            <a class="volver" href="../index.html">Menú</a>
+            <h1><span class="glifo">ABC</span>Convertir frase en acrónimo</h1>
+        </header>
+
+        <div class="panel">
+            <form class="tarjeta">
+                <input type="hidden" name="punto" value="1">
+                <div class="campo">
+                    <label for="frase">Frase</label>
+                    <input type="text" id="frase" name="frase" placeholder="Portable Network Graphics" required autofocus>
+                </div>
+                <button type="submit" class="boton">Generar acrónimo</button>
+            </form>
+
+            <section class="tarjeta resultado" aria-live="polite">
+                <p class="vacio">Escribe una frase y pulsa «Generar acrónimo».</p>
+            </section>
+        </div>
+    </main>
+
+    <script src="../app.js"></script>
+</body>
+</html>
